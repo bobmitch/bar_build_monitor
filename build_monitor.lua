@@ -1213,7 +1213,7 @@ local function rebuildLinesList()
 
             -- Time axis
             local _, count = ringRange(chart.seriesKey)
-            local windowSecs = count / GAME_FPS
+            local windowSecs = count * sampleIntervalSecs
             local nowSecs    = Spring.GetGameFrame() / GAME_FPS
             if windowSecs >= BASE_TICK_SECS then
                 gl.BlendFunc(GL.SRC_ALPHA, GL.ONE_MINUS_SRC_ALPHA)
