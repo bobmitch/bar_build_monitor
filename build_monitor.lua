@@ -133,7 +133,7 @@ end
 local CONFIG_FILE = "bar_charts_config.lua"
 
 local GAME_FPS        = 30
-local HISTORY_SECONDS = 120
+local HISTORY_SECONDS = 600
 local HISTORY_SIZE    = GAME_FPS * HISTORY_SECONDS   -- 18 000 frames
 local RENDER_POINTS   = 300
 
